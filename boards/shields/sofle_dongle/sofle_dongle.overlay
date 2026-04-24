@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <layouts/physical_layouts.dtsi>
+#include "layouts/physical_layouts.dtsi"
 
 / {
     chosen {
