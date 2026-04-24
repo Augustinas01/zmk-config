@@ -30,7 +30,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Senelis nesupras";
+            display-name = "Klafke";
 // ------------------------------------------------------------------------------------------------------------
 // |   `   |  1  |  2  |  3   |  4   |  5   |                        |  6   |  7    |  8    |  9   |   0   | Lock  |
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                        |  Y   |  U    |  I    |  O   |   P   | BKSPC |
@@ -77,7 +77,7 @@
 // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | Home |       | END  |       |       |
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &trans    &trans             &trans   &trans            &trans  &trans
+&trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &trans    &trans             &trans   &trans            &trans  &trans
 &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                        &kp PG_UP &kp LS(LC(LEFT))   &kp UP   &kp LS(LC(RIGHT)) &kp N0  &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                      &kp PG_DN &kp LEFT           &kp DOWN &kp RIGHT         &kp DEL &kp BSPC
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans        &trans  &trans  &trans    &kp HOME           &trans   &kp END           &trans  &trans
