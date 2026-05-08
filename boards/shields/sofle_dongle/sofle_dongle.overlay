@@ -36,10 +36,25 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         >;
     };
 
+    dummy_encoder_left: dummy_encoder_left {
+        compatible = "alps,ec11";
+        a-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "okay";
+    };
+
+    dummy_encoder_right: dummy_encoder_right {
+        compatible = "alps,ec11";
+        a-gpios = <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "okay";
+    };
+
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        status = "okay";
-        sensors = <>;
+        sensors = <&dummy_encoder_left &dummy_encoder_right>;
         triggers-per-rotation = <20>;
     };
 };
