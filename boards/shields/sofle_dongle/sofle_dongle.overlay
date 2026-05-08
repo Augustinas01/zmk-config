@@ -1,12 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "sofle-layouts.dtsi"
 
-/ {
-    key_physical_attrs: key_physical_attrs {
-        compatible = "zmk,key-physical-attrs";
-
-        #key-cells = <7>;
-    };
+&josefadamcik_sofle_layout {
+    transform = <&default_transform>;
 };
 
 / {
