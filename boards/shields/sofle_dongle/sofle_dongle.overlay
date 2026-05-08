@@ -5,14 +5,6 @@
     transform = <&default_transform>;
 };
 
-&left_encoder {
-    status = "okay";
-};
-
-&right_encoder {
-    status = "okay";
-};
-
 / {
     chosen {
         zmk,kscan = &mock_kscan;
