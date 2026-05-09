@@ -10,7 +10,14 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &josefadamcik_sofle_layout;
+        zmk,ext-power = &ext_power;
         zmk,underglow = &led_strip;
+    };
+
+    ext_power: ext_power {
+        compatible = "zmk,ext-power-generic";
+        status = "okay";
+        control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
     };
 
     mock_kscan: mock_kscan_0 {
