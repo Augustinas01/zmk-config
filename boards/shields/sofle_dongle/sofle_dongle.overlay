@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "sofle-layouts.dtsi"
+#include <dt-bindings/led/led.h>
 
 &josefadamcik_sofle_layout {
     transform = <&default_transform>;
