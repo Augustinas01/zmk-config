@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "sofle-layouts.dtsi"
-#include "nice_nano_nrf52840_zmk.overlay"
+#include "boards/nice_nano_nrf52840_zmk.overlay"
 
 &josefadamcik_sofle_layout {
     transform = <&default_transform>;
