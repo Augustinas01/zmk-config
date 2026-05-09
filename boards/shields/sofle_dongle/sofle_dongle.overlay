@@ -9,6 +9,7 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &josefadamcik_sofle_layout;
+        zmk,underglow = <0>;
     };
 
     mock_kscan: mock_kscan_0 {
